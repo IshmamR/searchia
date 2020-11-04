@@ -1,0 +1,129 @@
+.searchpage_logo {
+	/*object-fit: cover;*/
+	width: 100px;
+	height: 75px;
+	/*margin-right: 50px;*/
+}
+.sr_header {
+	display: flex;
+	flex-wrap: wrap;
+	position: sticky;
+	top: 0;
+	background-color: #444444;
+	z-index: 100;
+	align-items: flex-start;
+	padding: 30px;
+	border-bottom: 1px solid lightgray;
+}
+
+.sr_header > .sr_headbody > .search {
+	max-width: 90%;
+	margin: auto;
+}
+
+.sr_header > .sr_headbody > .search > .search_input {
+	margin-top: 0;
+	width: 90%;
+	margin: auto;
+	/*max-width: unset;*/
+}
+
+.sr_options {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 30px;
+}
+.sr_opleft {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.sr_opleft > .option {
+	display: flex;
+	align-items: center;
+	color: gray;
+}
+.sr_opleft > .option a {
+	margin-right: 10px;
+	margin-left: 5px;
+	text-decoration: none;
+	color: gray;
+}
+
+.sr_opright {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: auto;
+}
+.sr_opright a {
+	text-decoration: none;
+	color: gray;
+	margin: 0 5px;
+}
+
+/*Results*/
+
+.sr_results {
+	max-width: 650px;
+	margin-top: 20px;
+	margin-left: 120px;
+	margin-bottom: 100px;
+}
+
+.count {
+	margin-bottom: 40px;
+}
+
+.result h2 {
+	margin: 0;
+}
+.result a {
+	text-decoration: none !important;
+	color: #00d1cd;
+	word-wrap: break-word;
+}
+.result a:hover {
+	text-decoration: underline;
+}
+.result p {
+	margin-top: 10px;
+	margin-bottom: 25px;
+}
+
+
+@media only screen and (max-width: 540px) {
+	.sr_header {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: 5px;
+	}
+	.searchpage_logolink {
+		margin: auto;
+	}
+	.searchpage_logo {
+		width: 65vw;
+		margin-right: 0;
+		margin: auto;
+	}
+	.sr_options {
+		flex-direction: column;
+		justify-content: center;
+		margin-top: 5px;
+	}
+	.sr_opleft {
+		justify-content: center;
+	}
+	.sr_opright {
+		display: none;
+	}
+	.sr_results {
+		max-width: 95%;
+		margin-left: 0;
+		margin: 20px auto;
+	}
+
+}
