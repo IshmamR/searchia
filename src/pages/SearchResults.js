@@ -10,12 +10,22 @@ import MoreVertIcon from '@material-ui/icons/MoreVert';
 import ImageIcon from '@material-ui/icons/Image';
 
 import Search from '../components/Search';
-import LOGO from '../logo.png';
+import LOGO from '../logo2.png';
 import APIResponse from '../components/APIResponse';
+
+import { createMuiTheme, MuiThemeProvider } from '@material-ui/core/styles';
+import LinearProgress from '@material-ui/core/LinearProgress';
+
+const theme = createMuiTheme({
+	palette: {
+		secondary: {
+			main: '#42baf5'
+		}
+	}
+});
 
 function SearchResults() {
 	const [{ term }, dispatch] = useStateValue();
-
 	const { data } = APIResponse(term);
 	// console.log(typeof(term));
 	return (
@@ -72,7 +82,9 @@ function SearchResults() {
 					)
 				):(
 					<div>
-						<h2 className="load">...</h2>
+						<MuiThemeProvider theme={theme}>
+							<LinearProgress color="secondary" />
+						</MuiThemeProvider>
 					</div>
 				)}
 				

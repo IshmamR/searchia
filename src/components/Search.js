@@ -46,7 +46,7 @@ const Search = ({ hideButtons = false }) => {
 				<div className="search_buttons hidden">
 					<Button type="submit" variant="outlined" onClick={search}>Google Search</Button>
 					<a href="https://www.youtube.com/watch?v=hTWKbfoikeg" type="button" variant="outlined">
-						I'm feelong lonely
+						I'm feeling lonely
 					</a>
 				</div>
 			)}
