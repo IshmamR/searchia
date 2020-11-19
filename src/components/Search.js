@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import './Search.css';
 
@@ -11,6 +11,7 @@ import {useStateValue} from '../StateProvider';
 
 const Search = ({ hideButtons = false }) => {
 	const [{}, dispatch] = useStateValue();
+
 	const [input, setInput] = useState("");
 	const history = useHistory();
 
@@ -22,10 +23,8 @@ const Search = ({ hideButtons = false }) => {
 				type: actionTypes.SET_SEARCH_TERM,
 				term: input
 			});
-			// var push = !rImage? "search_result" : "image-result";
-			console.log(window.location.pathname);
-			history.push("/search_result");
-			// history.push("/image_result");
+
+			history.push('/search-result');
 		}
 	}
 
@@ -40,7 +39,7 @@ const Search = ({ hideButtons = false }) => {
 				<div className="search_buttons">
 					<Button type="submit" variant="outlined" onClick={search}>Searchia Search</Button>
 					<a href="https://www.youtube.com/watch?v=hTWKbfoikeg" target="_blank" rel="noreferrer">
-						<Button type="button" variant="outlined">I'm Feeling Lonely</Button>
+						<Button type="button" variant="outlined">I'm Feelong Lonely</Button>
 					</a>
 				</div>
 			) : (

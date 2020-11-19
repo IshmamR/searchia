@@ -81,27 +81,12 @@
 	margin: 0;
 }
 .result a {
+	text-decoration: none !important;
 	color: #00d1cd;
 	word-wrap: break-word;
 }
-
-.result .result_title {
-	text-decoration: none !important;
-}
-
-.sr_img_link {
-	display: flex;
-	align-items: center;
-}
-.sr_image {
-	width: 30px;
-	height: 20px;
-	object-fit: contain;
-	margin-right: 5px;
-}
-
 .result a:hover {
-	text-decoration: none;
+	text-decoration: underline;
 }
 .result p {
 	margin-top: 10px;
