@@ -37,7 +37,7 @@ const ResultsNav = ({rImage=false}) => {
 						</div>
 						<div className="option">
 							<ImageIcon />
-							<Link to="/">Images</Link>
+							<Link to="/image-result">Images</Link>
 						</div>
 						<div className="option">
 							<LocalOfferIcon />
