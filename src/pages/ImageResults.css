@@ -1,0 +1,19 @@
+.images {
+	width: 95%;
+	margin: auto;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background-color: #eaeaea;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	/*align-items: center;*/
+}
+.images .image {
+	width: 250px;
+	max-height: 220px;
+	object-fit: cover;
+	object-position: top;
+	margin-top: 20px;
+	border: 2px solid #444444;
+}

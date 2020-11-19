@@ -49,6 +49,25 @@
 	color: #00d1cd;
 }
 
+/*.mic-btn {
+	padding: 0px !important;
+	margin: 0px !important;
+	border: none !important;
+	width: 30px !important;
+	height: 30px;
+	object-fit: cover;
+	overflow: hidden;
+}
+
+.mic-btn .MuiButton-label {
+	max-width: 15px !important;
+}
+.mic-btn .MuiTouchRipple-root {
+	max-width: 15px;
+	background-color: white;
+	display: none;
+}*/
+
 .hidden {
 	display: none !important;
 }

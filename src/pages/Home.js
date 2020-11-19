@@ -13,11 +13,11 @@ function Home() {
 			<div className="home_header">
 				<div className="header_left">
 					<Link to="/">About</Link>
-					<Link to="/">Store</Link>
+					<Link to="/">Smail</Link>
 				</div>
 
 				<div className="header_right">
-					<Link to="/">Smail</Link>
+					<Link to="/">Books</Link>
 					<a href="https://imagez.netlify.app">Images</a>
 					<Apps className="md" />
 					<AccountCircle className="md" />
