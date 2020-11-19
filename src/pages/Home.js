@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './Home.css';
+import '../styles/Home.css';
 import LOGO from '../logo.png';
 import { Apps, AccountCircle } from '@material-ui/icons';
 

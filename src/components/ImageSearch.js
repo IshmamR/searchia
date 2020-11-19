@@ -9,7 +9,7 @@ import { Button } from '@material-ui/core';
 import {actionTypes} from '../reducer';
 import {useStateValue} from '../StateProvider';
 
-const Search = ({ hideButtons = false }) => {
+const ImageSearch = ({ hideButtons = false }) => {
 	const [{}, dispatch] = useStateValue();
 
 	const [input, setInput] = useState("");
@@ -24,7 +24,7 @@ const Search = ({ hideButtons = false }) => {
 				term: input
 			});
 
-			history.push('/search-result');
+			history.push('/image-result');
 		}
 	}
 
@@ -54,4 +54,4 @@ const Search = ({ hideButtons = false }) => {
 	)
 }
 
-export default Search;
+export default ImageSearch;
