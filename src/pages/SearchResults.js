@@ -34,7 +34,14 @@ function SearchResults() {
 				{(data && (term !== null))? (
 					data.items.map(dat =>
 					<div className="result" key={dat.cacheId}>
-						<a href={dat.formattedUrl}>{dat.displayLink}</a>
+						<div className="sr_img_link">
+							{dat.pagemap?.cse_image?.length > 0 && dat.pagemap?.cse_image[0]?.src && (
+								<img className="sr_image" 
+									src={dat.pagemap?.cse_image?.length > 0 && dat.pagemap?.cse_image[0]?.src}
+									alt=":" />
+							)}
+							<a className="." href={dat.formattedUrl}>{dat.displayLink}</a>
+						</div>
 						<a href={dat.formattedUrl} className="result_title"><h2>{dat.title}</h2></a>
 						<p>{dat.snippet}</p>
 					</div>

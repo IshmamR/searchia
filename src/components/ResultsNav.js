@@ -29,7 +29,7 @@ const ResultsNav = ({rImage=false}) => {
 					<div className="sr_opleft">	
 						<div className="option">
 							<SearchIcon />
-							<Link to="/">All</Link>
+							<Link to="/search-result">All</Link>
 						</div>
 						<div className="option">
 							<DescriptionIcon />
